@@ -1,0 +1,63 @@
+svg {
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.mn-LoadingDemo .show,
+.mn-LoadingDemo .hide {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.mn-LoremCard {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px 20px;
+  width: 200px;
+  text-align: left;
+}
+
+.mn-LoremCard img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.mn-MasaChinatown {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px 20px;
+  width: 400px;
+  text-align: left;
+}
+
+.mn-MasaChinatown img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.mn-LoadingDemo svg.line-drawing {
+  position: absolute;
+  max-width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.mn-LoadingDemo svg.line-drawing path {
+  fill: none;
+  stroke-width: 2;
+  stroke: #ddd;
+}
+
+.mn-LoadingDemo svg.line-drawing path.darker {
+  stroke: #aaa;
+}
